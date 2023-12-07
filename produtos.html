@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro de Produtos</title>
+  <style>
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: blue;
+  }
+
+  button[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button[type=submit]:hover {
+    background-color: rgb(0, 174, 255) 146, 187;
+  }
+
+  .form {
+    text-align: center;
+  }
+
+  body {
+    background-image: linear-gradient(to right,rgb(109, 109, 170), rgb(46, 46, 153),rgb(21, 21, 121), rgb(15, 15, 82),rgb(4, 4, 31) );
+    color: white;
+  }
+</style>
+
+</head>
+<body>
+  <div class="form">
+  <h1>Cadastro de Produtos</h1>
+  <form action="/produtos" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    <br>
+    <label for="endereco">Descricao:</label>
+    <input type="text" id="descricao" name="descricao" required>
+    <br>
+    <label for="email">Quantidade:</label>
+    <input type="text" id="quantidade" name="quantidade" required>
+    <br>
+    <label for="telefone">Valor:</label>
+    <input type="text" id="valor" name="valor" required>
+   
+    <button type="submit">Cadastrar</button>
+  </form>
+</div>
+</body>
+</html>
